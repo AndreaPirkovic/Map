@@ -1,0 +1,23 @@
+package pirkovic.andrea;
+import java.util.EnumMap;
+//EnumMap klasa u Javi je specijalizovana implementacija mape koja je dizajnirana posebno za upotrebu sa enum ključevima
+enum Days {
+    ponedeljak, utorak, sreda, cetvrtak, petak, subota, nedelja
+}
+ 
+public class Main {
+    public static void main(String[] args) {
+        EnumMap<Days, String> raspored = new EnumMap<>(Days.class);
+         
+        // Dodavanje elemenata u EnumMap
+        raspored.put(Days.ponedeljak, "Posao");
+        raspored.put(Days.utorak, "Kurs+posao");
+        raspored.put(Days.sreda, "Posao");
+        raspored.put(Days.cetvrtak, "Kurs+posao");
+        raspored.put(Days.petak, "Posao+yeeey");
+         
+        // Uzimanje elemenata iz EnumMap
+        System.out.println(raspored.get(Days.utorak)); 
+        System.out.println(raspored.get(Days.petak)); 
+    }
+}

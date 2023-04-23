@@ -1,0 +1,26 @@
+package pirkovic.andrea;
+import java.util.*;
+public class Main {
+	// Implementacija LinkedHashmap klase
+	 
+	
+	    public static void main(String[] args)
+	    {
+	 
+	        // Kreiranje prazne LinkedHashMap
+	        Map<String, Integer> mapa = new LinkedHashMap<>();
+	 
+	        //Unos parova kljuc/vredost u LinkedHashMap pomocu put() metoda
+	        mapa.put("Ana", 101);
+	        mapa.put("Pera", 303);
+	        mapa.put("Zika", 202);
+	 
+	        //Prolazak kroz mapu
+	        for (Map.Entry<String, Integer> e : mapa.entrySet())
+	 
+	            //Stampa
+	            System.out.println(e.getKey() + " "
+	                               + e.getValue());
+	    }
+	}
+
